@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.simplebar-scrollbar::before {
+  background: linear-gradient(to bottom, #FB923C, #F97316);
+  border-radius: 8px;
+  opacity: 1;
+}
+
+.simplebar-track.simplebar-vertical {
+  background: #FEF3C7;
+  border-radius: 8px;
+  width: 8px;
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar {
+  width: 8px;
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:hover::before {
+  background: linear-gradient(to bottom, #EA580C, #C2410C);
+}
